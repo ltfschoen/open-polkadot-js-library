@@ -15,13 +15,18 @@ A Subscan API Key may be obtained from https://docs.api.subscan.io/#introduction
 * Clone this repository
 
 ```
-git clone https://github.com/DataHighway-DHX/open-polkadot-js-library
+git clone https://github.com/ltfschoen/open-polkadot-js-library
 cd subscan
 ```
 
 * Switch to a version of Node.js >14 (i.e. v16.3.0 works).
 
-* Rename the file .env-sample to .env. Change its value of the key `SUBSCAN_API_KEY` from the default to instead be the Subscan API Key that you obtain, or run:
+* Rename the file .env-sample to .env.
+```
+cp .env-sample .env
+```
+
+* Change its value of the key `SUBSCAN_API_KEY` from the default to instead be the Subscan API Key that you obtain from https://pro.subscan.io/api_service, or run:
 ```
 export SUBSCAN_API_KEY=<INSERT_SUBSCAN_API_KEY>
 echo $SUBSCAN_API_KEY
