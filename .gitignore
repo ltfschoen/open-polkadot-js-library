@@ -2,3 +2,8 @@
 **/yarn-error.log
 **/.env
 .DS_Store
+.nx/cache
+tsconfig.tsbuildinfo
+dist/
+packages/opengov/.env
+.env

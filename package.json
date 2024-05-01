@@ -1,0 +1,20 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "lerna": "^8.1.2"
+  },
+  "scripts": {
+    "bootstrap": "yarn install; lerna bootstrap;",
+    "start": "lerna run start --parallel",
+    "start:opengov": "node -r ./dotenv.config.js node_modules/.bin/lerna run --scope opengov --stream dev",
+    "build:opengov": "node -r ./dotenv.config.js node_modules/.bin/lerna run --scope opengov --stream build",
+    "run:build:backend": "lerna run start --scope opengov",
+    "build:nft:tsc": "cd ./packages/opengov && yarn run build",
+    "clean:nft:tsc": "cd ./packages/opengov && yarn run clean"
+  }
+}

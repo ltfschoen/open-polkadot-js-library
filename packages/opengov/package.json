@@ -1,0 +1,19 @@
+{
+  "name": "opengov",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "build": "npx tsc --build",
+    "clean": "npx tsc --clean",
+    "votes": "yarn build && node ./dist/votes.js"
+  },
+  "dependencies": {
+    "@polkadot/api": "^11.0.2",
+    "@polkadot/util": "^12.6.2",
+    "@polkadot/util-crypto": "^12.6.2",
+    "axios": "^1.68.0",
+    "bignumber.js": "^9.1.2",
+    "dotenv": "^16.4.5",
+    "moment": "^2.30.1"
+  }
+}
