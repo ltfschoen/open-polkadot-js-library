@@ -1,8 +1,8 @@
-# Polkadot.js Library for Data Highway
+# Polkadot.js Library
 
 ## Instructions
 
-* Change into a subdirectory and follow the instructions. Each subdirectory contains a Polkadot.js script for interacting with or troubleshooting a Substrate-based node like the DataHighway.
+* Change into a subdirectory and follow the instructions. Each subdirectory contains a Polkadot.js script for interacting with or troubleshooting a Substrate-based node.
 
 ## Contributing
 
