@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { SubscanPayload } from "../types";
+import { AnyPayload } from "../types";
 
 const sleep = (delay: number) => {
   return new Promise(function(resolve) {
@@ -7,7 +7,7 @@ const sleep = (delay: number) => {
   });
 }
 
-async function req(api_key: string, endpoint: string, method: string, payload: SubscanPayload) {
+async function req(api_key: string, endpoint: string, method: string, payload: AnyPayload) {
   const options = {
     method: "POST",
     url: "https://" + endpoint + "/" + method,
@@ -32,7 +32,7 @@ async function req(api_key: string, endpoint: string, method: string, payload: S
   }
 }
 
-async function query(api_key: string, endpoint: string, method: string, payload: SubscanPayload) {
+async function query(api_key: string, endpoint: string, method: string, payload: AnyPayload) {
   const response = await req(api_key, endpoint, method, payload);
 
   return response;
