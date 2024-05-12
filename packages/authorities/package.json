@@ -1,0 +1,11 @@
+{
+  "name": "authorities",
+  "version": "0.0.1",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "build": "npx tsc --build",
+    "clean": "npx tsc --clean",
+    "start": "yarn build && node ./dist/index.js"
+  }
+}

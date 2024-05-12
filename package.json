@@ -4,7 +4,6 @@
   "workspaces": [
     "packages/*"
   ],
-  "dependencies": {},
   "devDependencies": {
     "lerna": "^8.1.2"
   },
@@ -16,5 +15,6 @@
     "run:build:backend": "lerna run start --scope opengov",
     "build:nft:tsc": "cd ./packages/opengov && yarn run build",
     "clean:nft:tsc": "cd ./packages/opengov && yarn run clean"
-  }
+  },
+  "packageManager": "yarn@4.2.2"
 }

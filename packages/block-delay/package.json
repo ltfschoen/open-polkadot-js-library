@@ -2,7 +2,7 @@
   "name": "block-head",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "Luke Schoen <luke@mxc.org>",
+  "author": "Luke Schoen <ltfschoen@gmail.com>",
   "license": "Apache-2",
   "dependencies": {
     "@polkadot/api": "^7.12.1",

@@ -1,0 +1,16 @@
+{
+  "name": "coingecko",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "build": "npx tsc --build",
+    "clean": "npx tsc --clean",
+    "bitcoin": "yarn build && node ./dist/bitcoin.js"
+  },
+  "dependencies": {
+    "axios": "^1.68.0",
+    "bignumber.js": "^9.1.2",
+    "dotenv": "^16.4.5",
+    "moment": "^2.30.1"
+  }
+}

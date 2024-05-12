@@ -10,12 +10,12 @@ nvm use
 npm install --global lerna
 ```
 
-Change into a subdirectory and follow the instructions.
+Change into a package subdirectory and follow the instructions.
 
 ```
-cd packages/opengov
-yarn
-yarn run votes
+yarn set version 4.2.2
+corepack prepare yarn@v4.2.2 --activate
+cd packages/<PACKAGE_NAME>
 ```
 
 ## Contributing

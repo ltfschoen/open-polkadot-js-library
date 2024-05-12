@@ -3,6 +3,7 @@
 **/.env
 .DS_Store
 .nx/cache
+.yarn
 tsconfig.tsbuildinfo
 dist/
 packages/opengov/.env

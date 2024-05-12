@@ -19,6 +19,7 @@ Bulk export Polkadot.js accounts and stored them in ./open-polkadot-js-library/p
 
 Run the following commands in this directory:
 ```bash
+yarn
 yarn run build
 yarn run votes
 ```
