@@ -10,3 +10,5 @@ packages/opengov/.env
 .env
 packages/opengov/artifacts/*
 !packages/opengov/artifacts/batch_exported_account_example.json
+packages/nft/artifacts/*
+packages/nft/.env

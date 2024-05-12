@@ -1,0 +1,36 @@
+{
+  "name": "nft",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "npx tsc --build",
+    "clean": "npx tsc --clean",
+    "mint": "yarn build && node ./dist/mint.js",
+    "get-token-properties": "yarn build && node ./dist/getTokenProperties.js",
+    "set-collection-permissions": "yarn build && node ./dist/setCollectionPermissions.js",
+    "set-token-property-permissions": "yarn build && node ./dist/setTokenPropertyPermissions.js",
+    "set-token-properties": "yarn build && node ./dist/setTokenProperties.js",
+    "set-collection-transfers-enabled-limit": "yarn build && node ./dist/setCollectionTransfersEnabledLimit.js",
+    "set-collection-limits": "yarn build && node ./dist/setCollectionLimits.js",
+    "approve-token-spender": "yarn build && node ./dist/approveTokenSpender.js",
+    "get-allowance": "yarn build && node ./dist/getAllowance.js",
+    "transfer-token": "yarn build && node ./dist/transferToken.js",
+    "transfer-collection": "yarn build && node ./dist/transferCollection.js",
+    "get-token": "yarn build && node ./dist/getToken.js",
+    "burn-token": "yarn build && node ./dist/burnToken.js",
+    "add-tokens-to-collection": "yarn build && node ./dist/addTokensToCollection.js",
+    "pinata-upload": "yarn build && node ./dist/pinata/pinataUploadIpfs.js",
+    "unique-upload": "yarn build && node ./dist/uniqueUploadIpfs.js"
+  },
+  "dependencies": {
+    "@pinata/sdk": "^2.1.0",
+    "@polkadot/api": "^11.0.2",
+    "@unique-nft/accounts": "^0.3.7",
+    "@unique-nft/schemas": "^0.1.6",
+    "@unique-nft/sdk": "^0.7.4",
+    "@unique-nft/substrate-client": "^0.11.6",
+    "bignumber.js": "^9.1.2",
+    "pino-std-serializers": "^6.2.2",
+    "rxjs": "^7.8.1"
+  }
+}

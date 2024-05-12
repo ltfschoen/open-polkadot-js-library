@@ -13,8 +13,8 @@
     "start:opengov": "node -r ./dotenv.config.js node_modules/.bin/lerna run --scope opengov --stream dev",
     "build:opengov": "node -r ./dotenv.config.js node_modules/.bin/lerna run --scope opengov --stream build",
     "run:build:backend": "lerna run start --scope opengov",
-    "build:nft:tsc": "cd ./packages/opengov && yarn run build",
-    "clean:nft:tsc": "cd ./packages/opengov && yarn run clean"
+    "build:opengov:tsc": "cd ./packages/opengov && yarn run build",
+    "clean:opengov:tsc": "cd ./packages/opengov && yarn run clean"
   },
   "packageManager": "yarn@4.2.2"
 }
