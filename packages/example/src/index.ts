@@ -1,6 +1,6 @@
 require('dotenv').config();
 import{ ApiPromise, WsProvider } from '@polkadot/api';
-import Keyring from '@polkadot/api';
+import { Keyring } from '@polkadot/api';
 
 const PRIVATE_KEY = process.env.PRIVATE_KEY ?? "";
 
