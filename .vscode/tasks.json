@@ -1,0 +1,21 @@
+{
+  "version": "2.0.0",
+  "command": "npm",
+  "tasks": [
+    {
+      "label": "clean:example:tsc",
+      "type": "npm",
+      "script": "clean:example:tsc"
+    },
+    {
+      "label": "build:example:tsc",
+      "type": "npm",
+      "script": "build:example:tsc"
+    },
+    {
+      "label": "task-example-build",
+      "dependsOrder": "sequence",
+      "dependsOn": ["clean:example:tsc", "build:example:tsc"]
+    }
+  ]
+}

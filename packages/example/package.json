@@ -4,8 +4,8 @@
   "main": "index.js",
   "private": true,
   "scripts": {
+    "clean": "npx tsc --build --clean",
     "build": "npx tsc --build",
-    "clean": "npx tsc --clean",
     "start": "yarn build && node ./dist/index.js"
   },
   "dependencies": {

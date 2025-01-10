@@ -5,8 +5,9 @@
     "packages/*"
   ],
   "devDependencies": {
-    "lerna": "^8.1.2"
+    "lerna": "^8.1.9"
   },
+  "engines": { "node": "22.x" },
   "scripts": {
     "bootstrap": "yarn install; lerna bootstrap;",
     "start": "lerna run start --parallel",
@@ -14,7 +15,10 @@
     "build:opengov": "node -r ./dotenv.config.js node_modules/.bin/lerna run --scope opengov --stream build",
     "run:build:backend": "lerna run start --scope opengov",
     "build:opengov:tsc": "cd ./packages/opengov && yarn run build",
-    "clean:opengov:tsc": "cd ./packages/opengov && yarn run clean"
+    "clean:opengov:tsc": "cd ./packages/opengov && yarn run clean",
+    "clean:example:tsc": "cd ./packages/example && yarn run clean",
+    "build:example:tsc": "cd ./packages/example && yarn run build",
+    "start:example:tsc": "cd ./packages/example && yarn run start"
   },
-  "packageManager": "yarn@4.2.2"
+  "packageManager": "yarn@4.6.0"
 }

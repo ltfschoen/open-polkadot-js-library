@@ -27,10 +27,15 @@ async function main () {
   // https://polkadot.js.org/docs/api/examples/promise/listen-to-balance-change
   // Retrieve the initial balance. Since the call has no callback, it is simply a promise
   // that resolves to the current on-chain value
-  // let aaa = await api.query.system.account(account.address);
-  // console.log(Object.keys(aaa));
-  let { data: { free: previousFree }, nonce: previousNonce }
-    = await api.query.system.account(account.address);
+  // let { data: { free: previousFree }, nonce: previousNonce } = await api.query.system.account(account.address);
+  let res = await api.query.system.account(account.address);
+  if (!res) {
+    console.log("Error retrieving balance");
+  }
+  let { data: { free: previousFree }, nonce: previousNonce } = JSON.parse(res.toString());
+  console.log(`Balance of ${previousFree}, nonce ${previousNonce}`);
+
+  
 
   process.exit()
 }
